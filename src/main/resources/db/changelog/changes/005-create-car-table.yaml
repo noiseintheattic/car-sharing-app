@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-car-table
+      author: bart
+      changes:
+        - createTable:
+            tableName: car
+            columns:
+                - column:
+                    name: id
+                    type: bigint
+                    autoIncrement: true
+                    constraints:
+                      primaryKey: true
+                      nullable: false
+                - column:
+                    name: model
+                    type: varchar(255)
+                    constraints:
+                      nullable: false
+                - column:
+                    name: inventory
+                    type: int
+                    constraints:
+                      nullable: false
+                - column:
+                    name: daily_fee
+                    type: DECIMAL(10,2)
+                    constraints:
+                      nullable: false
+                - column:
+                    name: type
+                    type: tinyint
+                    constraints:
+                      nullable: false
