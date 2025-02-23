@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-admin-user
+      author: bart (generated)
+      changes:
+        - insert:
+            tableName: user
+            columns:
+              - column: {name: email, value: "admin@mail.com"}
+              - column: {name: first_name, value: "admin"}
+              - column: {name: last_name, value: "admin"}
+              - column: {name: password, value: "$2a$10$l50IGvkgK7YFnJeX/ofHVOKsZaMsqYB2nzmc481qQu89puapsXzD6"}

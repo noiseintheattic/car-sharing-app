@@ -13,3 +13,7 @@ databaseChangeLog:
       file: db/changelog/changes/006-create-payment-table.yaml
   - include:
       file: db/changelog/changes/007-create-rental-table.yaml
+  - include:
+      file: db/changelog/changes/008-insert-admin-user.yaml
+  - include:
+      file: db/changelog/changes/009-insert-admin-role-for admin-user.yaml
