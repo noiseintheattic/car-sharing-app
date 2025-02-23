@@ -29,7 +29,8 @@ public class AuthenticationController {
     }
 
     @PostMapping("/login")
-    public UserLoginResponseDto login(@RequestBody UserLoginRequestDto requestDto) throws LoginException {
+    public UserLoginResponseDto login(@RequestBody UserLoginRequestDto requestDto)
+            throws LoginException {
         try {
             return authenticationService.authenticate(requestDto);
         } catch (AuthenticationException e) {
