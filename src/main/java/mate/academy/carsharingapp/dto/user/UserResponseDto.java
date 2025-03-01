@@ -1,4 +1,4 @@
-package mate.academy.carsharingapp.dto;
+package mate.academy.carsharingapp.dto.user;
 
 import lombok.Data;
 

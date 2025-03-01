@@ -2,10 +2,10 @@ package mate.academy.carsharingapp.controller;
 
 import javax.security.auth.login.LoginException;
 import lombok.RequiredArgsConstructor;
-import mate.academy.carsharingapp.dto.UserLoginRequestDto;
-import mate.academy.carsharingapp.dto.UserLoginResponseDto;
-import mate.academy.carsharingapp.dto.UserRegistrationRequestDto;
-import mate.academy.carsharingapp.dto.UserResponseDto;
+import mate.academy.carsharingapp.dto.user.UserLoginRequestDto;
+import mate.academy.carsharingapp.dto.user.UserLoginResponseDto;
+import mate.academy.carsharingapp.dto.user.UserRegistrationRequestDto;
+import mate.academy.carsharingapp.dto.user.UserResponseDto;
 import mate.academy.carsharingapp.exceptions.RegistrationException;
 import mate.academy.carsharingapp.security.AuthenticationService;
 import mate.academy.carsharingapp.service.UserService;
